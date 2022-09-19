@@ -49,7 +49,7 @@ public class PhoneList {
 	 *   - tell the user what the new contact is and that 
 	 *        it's been added
 	 */
-	public static void addContact() {
+	public void addContact() {
 		
 		
 	}
@@ -70,7 +70,7 @@ public class PhoneList {
 	 *        Remove the item from the list
 	 *        
 	 */
-	public static void removeContact() {
+	public void removeContact() {
 		
 		
 	}
@@ -87,7 +87,7 @@ public class PhoneList {
 	 *          -----------------
 	 *          #################
 	 */
-	public static void printList() {
+	public void printList() {
 		
 	}
 
@@ -101,7 +101,7 @@ public class PhoneList {
 	 * of how to manage them.
 	 * 
 	 */
-	public static void menu() {
+	public void menu() {
 		
 		int input = 0;
 		
@@ -134,7 +134,6 @@ public class PhoneList {
 			case 2:
 				//handle menu line 2: Remove Contact
 				removeContact();
-				
 				break;
 			case 3:
 				//handle menu line 3: Print List
@@ -142,7 +141,7 @@ public class PhoneList {
 				break;
 			case 4:
 				//handle menu line 4: Quit
-				System.out.println("\nGodbye!");
+				System.out.println("\nGoodbye!");
 				break;
 			default:
 				System.out.println("\nNot a valid input.\n"
@@ -155,7 +154,7 @@ public class PhoneList {
 		
 	}
 	
-	public static String getString(String str) {
+	public String getString(String str) {
 		
 		Scanner inKey = new Scanner(System.in);
 		System.out.print(str);  //notice it's NOT a print line.  This way input is next to question.
